@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "prettier/prettier": "error",
+    "react/jsx-uses-vars": "error"
+  },
+  "extends": ["airbnb", "prettier/react", "prettier"]
+}

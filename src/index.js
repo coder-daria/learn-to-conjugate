@@ -1,8 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import whyDidYouRender from "@welldone-software/why-did-you-render";
+
+import App from './App';
+
+
+if (process.env.NODE_ENV === 'development') {
+  whyDidYouRender(React, {
+    trackAllPureComponents: true,
+  });
+};
 
 ReactDOM.render(
   <React.StrictMode>

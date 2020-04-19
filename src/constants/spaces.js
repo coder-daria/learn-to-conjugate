@@ -1,0 +1,4 @@
+const DEFAULT_MARGIN = '15px';
+const DEFAULT_PADDING = '15px';
+
+export { DEFAULT_PADDING, DEFAULT_MARGIN };

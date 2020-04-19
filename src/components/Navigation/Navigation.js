@@ -1,9 +1,14 @@
 import React from 'react';
 
-import { Container } from './Navigation.styles';
+import { Container, Title, IconWrapper, Settings, SavedVerbs } from './Navigation.styles';
 
-const Navigation = ({ openDrawer }) => (
-  <Container onClick={openDrawer} />
+const Navigation = () => (
+  <Container>
+    <Title>Learn to conjugate</Title>
+    <Settings>
+      <IconWrapper />
+    </Settings>
+  </Container>
 );
 
 export default Navigation;

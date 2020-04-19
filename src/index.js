@@ -5,7 +5,6 @@ import whyDidYouRender from "@welldone-software/why-did-you-render";
 
 import App from './App';
 
-
 if (process.env.NODE_ENV === 'development') {
   whyDidYouRender(React, {
     trackAllPureComponents: true,

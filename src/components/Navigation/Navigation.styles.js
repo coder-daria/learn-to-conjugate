@@ -5,7 +5,6 @@ import { NAV_HEIGHT, ICON_SIZEH_HEIGHT, ICON_SIZE_WIDTH } from '../../constants/
 import { DEFAULT_PADDING } from '../../constants/spaces';
 import COLORS from '../../constants/colors';
 
-
 export const Container = styled.div`
   background: ${COLORS.purple.default};
   display: flex;

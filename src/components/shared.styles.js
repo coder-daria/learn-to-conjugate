@@ -3,6 +3,11 @@ import styled from 'styled-components';
 import { BUTTON_HEIGHT, BUTTON_WIDTH } from '../constants/sizes';
 import COLORS from '../constants/colors';
 
+export const ResetStyles = `
+  margin: 0;
+  padding: 0;
+`;
+
 export const SuccessStyles = `
   background: ${COLORS.green.default};
   color: ${COLORS.white.default};
@@ -14,11 +19,12 @@ export const CancelStyles = `
 `;
 
 export const Button = styled.button`
+  background-color: transparent;
   border: transparent;
   cursor: pointer;
-  height: ${BUTTON_HEIGHT};
+  height: ${({ height }) => height || BUTTON_HEIGHT};
   outline: none;
-  width: ${BUTTON_WIDTH};
+  width: ${({ width }) => width || BUTTON_WIDTH};
 `;
 
 export const SuccessButton = styled(Button)`

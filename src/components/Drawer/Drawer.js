@@ -4,8 +4,8 @@ import { Container, Header, SelectedWord, Content, Footer } from './Drawer.style
 
 import { SuccessButton, CancelButton } from '../shared.styles';
 
-const Drawer = ({ drawerItem, closeDrawer, forwardRef }) => (
-  <Container isOpen={drawerItem} ref={forwardRef}>
+const Drawer = ({ drawerItem, closeDrawer}) => (
+  <Container isOpen={drawerItem}>
     <Header>
       <span>Selected word:</span>
       <SelectedWord>{drawerItem}</SelectedWord>

@@ -7,5 +7,3 @@ export const Container = styled.textarea`
   outline: none;
   width: 100%;
 `;
-
-

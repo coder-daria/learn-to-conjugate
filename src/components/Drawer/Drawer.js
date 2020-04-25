@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { Container, Header, SelectedWord, Content, Footer } from './Drawer.styles';
-
 import { SuccessButton, CancelButton } from '../shared.styles';
 
-const Drawer = ({ drawerItem, closeDrawer}) => (
-  <Container isOpen={drawerItem}>
+import { Container, Header, SelectedWord, Content, Footer } from './Drawer.styles';
+
+const Drawer = ({ selectedText, closeDrawer}) => (
+  <Container isOpen={selectedText}>
     <Header>
       <span>Selected word:</span>
-      <SelectedWord>{drawerItem}</SelectedWord>
+      <SelectedWord>{selectedText}</SelectedWord>
     </Header>
     <Content />
     <Footer>

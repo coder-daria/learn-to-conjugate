@@ -19,5 +19,6 @@ export const DropDown = styled.div`
   right: -15px;
   top: 25px;
   transition: all 0.3s ease-in-out 0s;
+  visibility: ${({ isOpen }) => isOpen ? 'visible' : 'hidden'};
   width: 200px;
 `;

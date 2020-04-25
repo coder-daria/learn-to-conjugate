@@ -1,9 +1,22 @@
-import React from 'react';
+//@ This component will be possibly removed in the future.
 
-import { Container } from './TextField.styles';
+// import React from 'react';
 
-const TextField = ({ setSelectedText }) => (
-  <Container onDoubleClick={setSelectedText} />
-);
+// import { Container } from './TextField.styles';
 
-export default TextField;
+// const TextField = ({ setSelectedText, value, onChange }) => {
+//   const handleChange = (e) => {
+//     const value = e.target.value;
+//     onChange(value);
+//   };
+
+//   return (
+//     <Container
+//       onChange={handleChange}
+//       onDoubleClick={setSelectedText}
+//       value={value}
+//     />
+//   )
+// };
+
+// export default TextField;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  font-family: 'Source Serif Pro', serif;
 `;
 
 export const Page = styled.div`

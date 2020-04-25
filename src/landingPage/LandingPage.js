@@ -1,11 +1,9 @@
 import React from 'react';
 
-import { TextField } from '../components/TextField';
-
-import { Container } from './LandingPage.styles';
+import { Container, Content, ActionButtons, StyledButton, StyledSendIcon, StyledResetIcon } from './LandingPage.styles';
 
 const LandingPage = ({ setSelectedText }) => {
-  const selectedValue = () => {
+  const setSelectedValue = () => {
     const selectedText = window.getSelection().toString();
 
     if(selectedText) {
@@ -13,9 +11,30 @@ const LandingPage = ({ setSelectedText }) => {
     }
   };
 
+  const handleClick = () => {
+    const content = document.getElementById('content').textContent;
+    // @todo Send text to BE
+  };
+
+  const resetContent = () => {
+    document.getElementById('content').textContent = '';
+  };
+
   return (
     <Container>
-      <TextField setSelectedText={selectedValue}/>
+      <ActionButtons>
+        <StyledButton onClick={handleClick}>
+          <StyledSendIcon />
+        </StyledButton>
+        <StyledButton onClick={resetContent}>
+          <StyledResetIcon />
+        </StyledButton>
+      </ActionButtons>
+        <Content
+          id="content"
+          onDoubleClick={setSelectedValue}
+          contentEditable
+        />
     </Container>
   );
 }

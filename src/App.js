@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import 'sanitize.css';
 
+
 import { useClickOutside } from './utils/useClickOutside';
 
 import {Navigation} from './components/Navigation';
@@ -11,11 +12,11 @@ import { LandingPage } from './LandingPage';
 import { Container, Page } from './App.styles';
 
 function App() {
-  const [drawerItem, setDrawerItem] = useState(true);
+  const [selectedText, setSelectedText] = useState(undefined);
   const ref = useRef();
 
-  const toggleDrawer = () => {
-    setDrawerItem(undefined);
+  const closeDrawer = () => {
+    setSelectedText(undefined);
   };
 
   // @todo - Add to settings
@@ -27,11 +28,11 @@ function App() {
 
   return (
     <Container>
-      <Page isDrawerOpen={drawerItem}>
+      <Page isDrawerOpen={selectedText}>
         <Navigation />
-        <LandingPage setSelectedText={setDrawerItem} />
+        <LandingPage setSelectedText={setSelectedText} />
       </Page>
-      <Drawer forwardRef={ref} drawerItem={drawerItem} closeDrawer={toggleDrawer} />
+      <Drawer forwardRef={ref} selectedText={selectedText} closeDrawer={closeDrawer} />
     </Container>
   );
 };

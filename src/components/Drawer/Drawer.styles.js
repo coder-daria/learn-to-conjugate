@@ -9,7 +9,7 @@ export const Container = styled.div`
   height: 100vh;
   overflow-x: hidden;
   transition: width 0.2s;
-  width: ${({ isOpen }) => isOpen ? ' 500px' : '0'};
+  width: ${({ isOpen }) => isOpen ? '700px' : '0'};
 `;
 
 export const Header = styled.div`

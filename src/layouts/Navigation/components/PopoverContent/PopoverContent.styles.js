@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 import { SMALL_PADDING } from '../../../../constants/spaces';
 
@@ -19,5 +20,17 @@ export const MenuItem = styled.li`
 
   :hover {
     background: rgba(33,33,33,.2);
+  }
+`;
+
+
+export const StyledLink = styled(Link)`
+  display: inline-block;
+  text-decoration: none;
+  width: inherit;
+
+  // todo Check why the active color is set to red;
+  :hover { 
+    color: inherit;
   }
 `;

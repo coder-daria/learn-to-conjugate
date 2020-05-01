@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { Menu, MenuItem } from './PopoverContent.styles';
+import { Menu, MenuItem, StyledLink } from './PopoverContent.styles';
 
 const PopoverContent = () => (
   <Menu>
-    <MenuItem>Preferences</MenuItem>
-    <MenuItem>Verbs</MenuItem>
+    <MenuItem>
+      <StyledLink to="/settings">Settings</StyledLink>
+    </MenuItem>
   </Menu>
 );
 

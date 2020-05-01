@@ -11,6 +11,6 @@ export const Container = styled.div`
 `;
 
 export const Page = styled.div`
-  width: ${({ isDrawerOpen }) => isDrawerOpen ? '100vw' : 'calc(100vw + 500px)'};
+  width: calc(100vw + 500px);
 `;
 

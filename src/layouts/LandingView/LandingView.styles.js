@@ -9,11 +9,11 @@ import { ReactComponent as SendIcon } from '../../icons/send.svg';
 import { ReactComponent as TrashIcon } from '../../icons/trash.svg';
 
 export const ActionButtons = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  height: ${ACTION_BUTTONS_HEIGHT};
   align-items: center;
   border-bottom: 1px solid ${COLORS.grey.light};
+  display: flex;
+  height: ${ACTION_BUTTONS_HEIGHT};
+  justify-content: flex-end;
 `;
 
 export const StyledButton = styled(Button)`

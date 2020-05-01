@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider, createGlobalStyle  } from 'styled-components';
-
 import 'sanitize.css';
 
 // @todo - Add to settings
@@ -8,8 +8,8 @@ import 'sanitize.css';
 
 import { Drawer } from './common/components/Drawer';
 
-import { Navigation, LandingPage } from './layouts';
-
+import { Routes } from './Routes';
+import { Navigation } from './layouts';
 import { Container, Page } from './App.styles';
 
 const GlobalStyle = createGlobalStyle`
@@ -30,13 +30,8 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-function App() {
-  const [selectedText, setSelectedText] = useState(undefined);
+function App () {
   const ref = useRef();
-
-  const closeDrawer = () => {
-    setSelectedText(undefined);
-  };
 
   // @todo - Add to settings
   // useClickOutside((ref), () => {
@@ -45,23 +40,19 @@ function App() {
   //   }
   // });
 
-  //todo - It will be changed when settings are applied
-  const theme = {
-    standard: "standard",
-    purple: "purple",
-  };
-
   return (
-    <ThemeProvider theme={theme}>
-       <GlobalStyle theme={theme.standard} />
-      <Container>
-        <Page isDrawerOpen={selectedText}>
-          <Navigation />
-          <LandingPage setSelectedText={setSelectedText} />
-        </Page>
-        <Drawer forwardRef={ref} selectedText={selectedText} closeDrawer={closeDrawer} />
-      </Container>
-    </ThemeProvider>
+      <ThemeProvider theme={{}}>
+        <GlobalStyle />
+        <Router>
+          <Container>
+            <Page>
+              <Navigation />
+              <Routes />
+            </Page>
+            <Drawer forwardRef={ref} />
+          </Container>
+        </Router>
+      </ThemeProvider>
   );
 };
 

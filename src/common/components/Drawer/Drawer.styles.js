@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import { NAV_HEIGHT, FOOTER_HEIGHT } from '../../constants/sizes';
-import { DEFAULT_PADDING, DEFAULT_MARGIN } from '../../constants/spaces';
-import COLORS from '../../constants/colors';
+import { NAV_HEIGHT, FOOTER_HEIGHT } from '../../../constants/sizes';
+import { DEFAULT_PADDING, DEFAULT_MARGIN } from '../../../constants/spaces';
+import COLORS from '../../../constants/colors';
 
 export const Container = styled.div`
   background: inherit;

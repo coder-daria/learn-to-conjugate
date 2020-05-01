@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import COLORS from '../../constants/colors';
+import COLORS from '../../../constants/colors';
 
-import { Button } from '../shared.styles';
+import { Button } from '../../styles/Button.styles';
 
 export const Container = styled(Button)`
   height: auto;

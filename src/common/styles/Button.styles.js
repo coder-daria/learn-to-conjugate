@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import { BUTTON_HEIGHT, BUTTON_WIDTH } from '../constants/sizes';
-import COLORS from '../constants/colors';
+import { BUTTON_HEIGHT, BUTTON_WIDTH } from '../../constants/sizes';
+import COLORS from '../../constants/colors';
 
 export const ResetStyles = `
   margin: 0;

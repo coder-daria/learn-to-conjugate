@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SuccessButton, CancelButton } from '../shared.styles';
+import { SuccessButton, CancelButton } from '../../styles/Button.styles';
 
 import { Container, Header, SelectedWord, Content, Footer } from './Drawer.styles';
 

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import { SMALL_PADDING } from '../../../constants/spaces';
+import { SMALL_PADDING } from '../../../../constants/spaces';
 
-import { ResetStyles } from '../../shared.styles';
+import { ResetStyles } from '../../../../common/styles/Button.styles';
 
 export const Menu = styled.ul`
   display: flex;

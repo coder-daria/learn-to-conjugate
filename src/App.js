@@ -3,12 +3,13 @@ import { ThemeProvider, createGlobalStyle  } from 'styled-components';
 
 import 'sanitize.css';
 
-import { useClickOutside } from './utils/useClickOutside';
+// @todo - Add to settings
+// import { useClickOutside } from './common/utils/useClickOutside';
 
-import {Navigation} from './components/Navigation';
-import { Drawer } from './components/Drawer';
+import { Drawer } from './common/components/Drawer';
 
-import { LandingPage } from './LandingPage';
+import { Navigation, LandingPage } from './layouts';
+
 import { Container, Page } from './App.styles';
 
 const GlobalStyle = createGlobalStyle`

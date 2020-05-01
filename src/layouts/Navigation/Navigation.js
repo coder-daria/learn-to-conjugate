@@ -1,10 +1,10 @@
 import React from 'react';
 
+import { Popover } from '../../common/components/Popover';
+
+import { PopoverContent } from './components/PopoverContent';
+
 import { Container, Title, IconWrapper, Settings } from './Navigation.styles';
-
-import { PopoverContent } from '../Popover/PopoverContent';
-
-import { Popover } from '../Popover';
 
 const Navigation = () => (
   <Container>

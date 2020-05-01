@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-import { ACTION_BUTTONS_HEIGHT } from '../constants/sizes';
-import COLORS from '../constants/colors';
-import { BIG_PADDING } from '../constants/spaces';
-import { Button } from '../components/shared.styles';
+import { ACTION_BUTTONS_HEIGHT } from '../../constants/sizes';
+import COLORS from '../../constants/colors';
+import { BIG_PADDING } from '../../constants/spaces';
+import { Button } from '../../common/styles/Button.styles';
 
-import { ReactComponent as SendIcon } from '../icons/send.svg';
-import { ReactComponent as TrashIcon } from '../icons/trash.svg';
+import { ReactComponent as SendIcon } from '../../icons/send.svg';
+import { ReactComponent as TrashIcon } from '../../icons/trash.svg';
 
 export const ActionButtons = styled.div`
   display: flex;

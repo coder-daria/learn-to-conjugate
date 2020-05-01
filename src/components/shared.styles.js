@@ -9,18 +9,18 @@ export const ResetStyles = `
 `;
 
 export const SuccessStyles = `
-  background: ${COLORS.green.default};
+  background: ${COLORS.green.light};
   color: ${COLORS.white.default};
 `;
 
 export const CancelStyles = `
-  background: ${COLORS.red.default};
+  background: ${COLORS.red.light};
   color: ${COLORS.white.default}
 `;
 
 export const Button = styled.button`
-  background-color: transparent;
-  border: transparent;
+  background-color: ${COLORS.transparent.default};
+  border: ${COLORS.transparent.default};
   cursor: pointer;
   height: ${({ height }) => height || BUTTON_HEIGHT};
   outline: none;
@@ -28,9 +28,25 @@ export const Button = styled.button`
 `;
 
 export const SuccessButton = styled(Button)`
- ${SuccessStyles};
+  ${SuccessStyles};
+
+  :hover {
+    background-color: ${COLORS.green.default};
+  }
+
+  :active {
+    background-color: ${COLORS.green.dark};
+  }
 `;
 
 export const CancelButton = styled(Button)`
- ${CancelStyles};
+  ${CancelStyles};
+
+  :hover {
+      background-color: ${COLORS.red.default};
+    }
+
+  :active {
+    background-color: ${COLORS.red.dark};
+  }
 `;

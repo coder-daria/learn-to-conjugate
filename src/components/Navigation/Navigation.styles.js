@@ -6,7 +6,7 @@ import { DEFAULT_PADDING } from '../../constants/spaces';
 import COLORS from '../../constants/colors';
 
 export const Container = styled.div`
-  background: ${COLORS.purple.default};
+  background: #45424C;
   display: flex;
   height: ${NAV_HEIGHT};
   justify-content: space-between;
@@ -27,4 +27,12 @@ export const IconWrapper = styled(SettingsIcon)`
   fill: ${COLORS.grey.default} !important;
   height: ${ICON_SIZEH_HEIGHT};
   width: ${ICON_SIZE_WIDTH};
+
+  :hover {
+    fill: #E0D8EB !important;
+  }
+
+  :active {
+    fill: #9E9CA1 !important;
+  }
 `;

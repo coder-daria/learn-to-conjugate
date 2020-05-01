@@ -2,8 +2,8 @@ const ACTION_BUTTONS_HEIGHT = '50px';
 const BUTTON_HEIGHT = '30px';
 const BUTTON_WIDTH = '100px';
 const FOOTER_HEIGHT = '50px';
-const ICON_SIZE_WIDTH = ICON_SIZEH_HEIGHT;
 const ICON_SIZEH_HEIGHT = '15px';
+const ICON_SIZE_WIDTH = ICON_SIZEH_HEIGHT;
 const NAV_HEIGHT = '50px';
 
 export {

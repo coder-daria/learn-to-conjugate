@@ -1,16 +1,17 @@
 import styled from 'styled-components';
+
 import COLORS from '../../constants/colors';
 
 import { Button } from '../shared.styles';
 
 export const Container = styled(Button)`
-  position: relative;
   height: auto;
+  position: relative;
   width: auto;
 `;
 
 export const DropDown = styled.div`
-  background: ${COLORS.grey.default};
+  background: ${COLORS.white.dark};
   border-radius: 3px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   opacity: ${({ isOpen }) => isOpen ? '1' : '0'};

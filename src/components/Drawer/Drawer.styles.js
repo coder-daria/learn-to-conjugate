@@ -5,7 +5,8 @@ import { DEFAULT_PADDING, DEFAULT_MARGIN } from '../../constants/spaces';
 import COLORS from '../../constants/colors';
 
 export const Container = styled.div`
-  background: ${COLORS.grey.default};
+  background: inherit;
+  border-left: 1px solid ${COLORS.grey.light};
   height: 100vh;
   overflow-x: hidden;
   transition: width 0.2s;

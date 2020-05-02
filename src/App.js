@@ -13,6 +13,10 @@ import { Navigation } from './layouts';
 import { Container, Page } from './App.styles';
 
 const GlobalStyle = createGlobalStyle`
+  body {
+    font-size: 1rem;
+  }
+
   ::-webkit-scrollbar-track {
     border-radius: 15px;
     background-color: #FCF7FF;

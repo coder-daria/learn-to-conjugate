@@ -1,19 +1,22 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 
-import { SET_SELECTED_TEXT, SET_DRAWER_VISIBILITY } from '../../redux/actions/landingPageActions';
+import { fetchTense } from '../../server/API';
+
+import { toggleDrawer } from '../../redux/utils/drawer'
 
 import { Container, Content, ActionButtons, StyledButton, StyledSendIcon, StyledResetIcon } from './LandingView.styles';
 
 const LandingPage = () => {
   const dispatch = useDispatch();
 
-  const setSelectedValue = () => {
+  const setSelectedValue = async () => {
     const selectedText = window.getSelection().toString();
 
     if(selectedText) {
-      dispatch({ type: SET_SELECTED_TEXT, selectedText });
-      dispatch({ type: SET_DRAWER_VISIBILITY, isDrawerVisible: true });
+      const fetchedTense = await fetchTense(selectedText);
+
+      toggleDrawer({dispatch, selectedText: fetchedTense, isDrawerVisible: true })
     }
   };
 
